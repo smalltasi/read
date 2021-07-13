@@ -25,3 +25,13 @@ for w in data:
 	if 'good' in w:
 		word.append(w)
 print('總共有', len(word), '筆含有good這個詞')
+
+#快寫法
+wor = [w for w in data if 'good' in w]
+print(len(wor))
+
+count = 0
+for review in wor[:3]:   #叫出前三段，並且顯示第幾段
+	count += 1
+	print(count)
+	print(review)
